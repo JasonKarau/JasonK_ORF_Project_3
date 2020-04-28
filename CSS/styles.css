@@ -3,6 +3,10 @@
   font-family: 'Noto Serif', serif;
 }
 
+.container {
+  margin: 17px;
+}
+
 header {
   background: #2D3945;
   margin: 0;
@@ -17,6 +21,127 @@ header h1 {
   text-transform: uppercase;
 }
 
-body {
+.sec1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
 
+h2 {
+  font-size: 18px;
+}
+
+p {
+  margin: 0 auto;
+}
+
+label, p {
+  color: #7c8c9c;
+}
+
+.border {
+  height: auto;
+  width: 100%;
+  border-top: 4.5px solid #2D3945;
+  border-bottom: 2px solid #2D3945;
+  padding: 1.5px;
+}
+
+::-webkit-input-placeholder {
+   font-style: italic;
+   padding-right: 3px;
+}
+:-moz-placeholder {
+   font-style: italic;
+   padding-right: 3px;
+}
+::-moz-placeholder {
+   font-style: italic;
+   padding-right: 3px;
+}
+:-ms-input-placeholder {
+   font-style: italic;
+   padding-right: 3px;
+}
+
+.sec2 label {
+  display: block;
+  margin-bottom: 7px;
+  margin-top: 10px;
+}
+
+.sec2 input,
+.sec2 select {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background: #EFF0F1
+}
+
+input {
+  text-align: right;
+  transition-duration: .5s;
+}
+
+.sec2 input:focus,
+.sec2 label:focus {
+  text-align: left;
+  border: solid 2px lightblue;
+  padding: 13px;
+}
+
+.sec2 select {
+  max-width: 100%;
+  width: 100%;
+  color: #7c8c9c;
+}
+
+
+hr {
+  border: solid black 2px;
+}
+
+.sec3 label {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.sec3 label:last-child {
+  margin: 0;
+}
+
+.sec3 p {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.sec3 textarea {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  padding: 0;
+  background: #EFF0F1;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  background: #4EBBB5;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 25px 0;
+  font-size: 20px;
+}
+
+.copy {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .sec2 label {
+    display: block;
 }

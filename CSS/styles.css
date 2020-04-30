@@ -112,8 +112,8 @@ hr {
   display: inline-block;
 }
 
-.sec3 label:last-child {
-  margin: 0;
+.sec3 label:last-of-type {
+  margin: 10px 0px 10px 0px;
 }
 
 .sec3 p {
@@ -161,7 +161,7 @@ fieldset {
     padding-top: 40px;
     width: 60%;
     margin: auto;
-    background: linear-gradient(180deg, rgba(162,162,162,1) 0%, rgba(255,255,255,1) 5%);
+    background: linear-gradient(180deg, rgba(162,162,162,1) 0%, rgba(255,255,255,1) 10%);
   }
 
   .input-sec {

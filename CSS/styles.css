@@ -26,8 +26,10 @@ header h1 {
   margin-bottom: 25px;
 }
 
-h2 {
-  font-size: 18px;
+legend {
+  padding: 20px 0px 20px 0px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 p {
@@ -49,18 +51,22 @@ label, p {
 ::-webkit-input-placeholder {
    font-style: italic;
    padding-right: 3px;
+   text-align: right;
 }
 :-moz-placeholder {
    font-style: italic;
    padding-right: 3px;
+   text-align: right;
 }
 ::-moz-placeholder {
    font-style: italic;
    padding-right: 3px;
+   text-align: right;
 }
 :-ms-input-placeholder {
    font-style: italic;
    padding-right: 3px;
+   text-align: right;
 }
 
 .sec2 label {
@@ -79,15 +85,13 @@ label, p {
 }
 
 input {
-  text-align: right;
   transition-duration: .5s;
 }
 
 .sec2 input:focus,
 .sec2 label:focus {
   text-align: left;
-  border: solid 2px lightblue;
-  padding: 13px;
+  background: lightgrey;
 }
 
 .sec2 select {
@@ -141,13 +145,39 @@ button {
   text-align: center;
 }
 
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 @media screen and (min-width: 768px) {
     .sec2 label {
-      display: block;
+      display: inline-block;
   }
 
   .container {
-    max-width: 50%;
+    padding-top: 40px;
+    width: 60%;
     margin: auto;
+    background: linear-gradient(180deg, rgba(162,162,162,1) 0%, rgba(255,255,255,1) 5%);
   }
+
+  .input-sec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sec2 input,
+  .sec2 select {
+    width: 70%;
+  }
+
+  #zip {
+    width: 30%;
+    margin-right: 40%;
+  }
+
 }

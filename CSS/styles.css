@@ -37,7 +37,7 @@ p {
 }
 
 label, p {
-  color: #7c8c9c;
+  color: #6c757d;
 }
 
 .border {
@@ -79,7 +79,7 @@ label, p {
 .sec2 select {
   width: 100%;
   padding: 15px;
-  border: none;
+  border: transparent;
   border-radius: 5px;
   background: #EFF0F1
 }
@@ -88,21 +88,25 @@ input {
   transition-duration: .5s;
 }
 
+form {
+  border: inherit;
+}
+
 .sec2 input:focus,
-.sec2 label:focus {
+.sec2 label:focus,
+.sec2 select:focus,
+.sec2 option:focus  {
   text-align: left;
   background: lightgrey;
+  outline: none;
+  box-shadow: 0 0 10px #46698B;
+  border: 1px #46698B solid;
 }
 
 .sec2 select {
   max-width: 100%;
   width: 100%;
   color: #7c8c9c;
-}
-
-
-hr {
-  border: solid black 2px;
 }
 
 .sec3 label {
@@ -131,6 +135,12 @@ hr {
   width: 100%;
 }
 
+.sec3 textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #46698B;
+  border: 2px #46698B solid;
+}
+
 button {
   width: 100%;
   background: #4EBBB5;
@@ -139,17 +149,23 @@ button {
   color: white;
   padding: 25px 0;
   font-size: 20px;
+  font-weight: bold;
 }
 
 .copy {
   text-align: center;
 }
 
-
 fieldset {
   border: none;
   margin: 0;
   padding: 0;
+}
+
+hr {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border: solid black 1px;
 }
 
 @media screen and (min-width: 768px) {
